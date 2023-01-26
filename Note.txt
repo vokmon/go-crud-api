@@ -1,0 +1,31 @@
+go mod init go-crud-api
+
+https://github.com/githubnemo/CompileDaemon -> watch the file changes
+go get github.com/githubnemo/CompileDaemon
+go install github.com/githubnemo/CompileDaemon
+
+
+https://github.com/joho/godotenv -> Load variables
+go get github.com/joho/godotenv
+go install github.com/joho/godotenv/cmd/godotenv@latest
+
+
+https://gin-gonic.com/ -> web framework
+go get -u github.com/gin-gonic/gin
+
+
+https://gorm.io/ -> ORM for go
+go get -u gorm.io/gorm
+go get -u gorm.io/driver/postgres
+
+
+Run
+~/go/bin/CompileDaemon -command="./go-crud-api"
+
+
+Database
+https://api.elephantsql.com/console/fc14dee5-462d-42f0-9ae4-496edf458aa4/details
+
+
+create post model and run migrate script to create tables
+go run migrate/migrate.go 

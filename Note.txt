@@ -1,4 +1,7 @@
 go mod init go-crud-api
+https://www.youtube.com/watch?v=lf_kiH_NPvM
+https://www.youtube.com/watch?v=ma7rUS_vW9M
+
 
 https://github.com/githubnemo/CompileDaemon -> watch the file changes
 go get github.com/githubnemo/CompileDaemon
@@ -18,14 +21,25 @@ https://gorm.io/ -> ORM for go
 go get -u gorm.io/gorm
 go get -u gorm.io/driver/postgres
 
+https://github.com/golang/crypto -> encrypt password
+go get -u golang.org/x/crypto/bcrypt
+
+https://github.com/golang-jwt/jwt -> jwt
+go get -u github.com/golang-jwt/jwt/v4
 
 Run
 ~/go/bin/CompileDaemon -command="./go-crud-api"
 
 
 Database
-https://api.elephantsql.com/console/fc14dee5-462d-42f0-9ae4-496edf458aa4/details
+https://api.elephantsql.com/console/fc14dee5-462d-42f0-9ae4-496edf458aa4/details -> sign in with github
 
 
 create post model and run migrate script to create tables
 go run migrate/migrate.go 
+
+Signup user test
+{
+    "Email": "hello@hello.com",
+    "Password":"123456"
+}
